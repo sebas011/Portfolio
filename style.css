@@ -1,0 +1,23 @@
+body{
+    background-color: #183D3D;
+}
+
+.name{
+    color: #93B1A6;
+}
+
+.container{
+    position: fixed;
+    bottom: 85%;
+    right: 10%;
+}
+
+button{
+    ppadding: 10px 20px; /* Adjust padding as needed */
+    background: none; /* Set button background color */
+    color: #93B1A6; /* Set button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-right: 10px; /* Add margin between button and other elements */
+}
