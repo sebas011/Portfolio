@@ -1,23 +1,67 @@
-body{
-    background-color: #183D3D;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('media/bc.jpg'); /* Specify your background image path */
+    background-size: cover;
+    background-attachment: fixed; /* This ensures the background remains fixed while scrolling */
 }
 
-.name{
-    color: #93B1A6;
+.menu-btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-.container{
-    position: fixed;
-    bottom: 85%;
-    right: 10%;
+.menu-btn:hover {
+    background-color: #555;
 }
 
-button{
-    ppadding: 10px 20px; /* Adjust padding as needed */
-    background: none; /* Set button background color */
-    color: #93B1A6; /* Set button text color */
-    border: none; /* Remove button border */
-    border-radius: 5px; /* Add border radius for rounded corners */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    margin-right: 10px; /* Add margin between button and other elements */
+.menu-icon {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu-btn.active .menu-icon:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.menu-btn.active .menu-icon:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.active .menu-icon:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.nav-links {
+    display: none; /* Hide navigation links by default */
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
 }

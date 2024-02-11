@@ -3,36 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 <body>
-    <h1 class="name">Rodian Marin</h1>
 
-    <div class="container">
-        <button>Home</button>
-        <button>About</button>
-        <button>Skills</button>
-        <button>Project</button>
-        <button>Contact</button>
-    </div>
-
-    <div>
-        <h1>Hello I'm Rodian</h1>
-        <p>----- I'm a full stack developer</p>
-        <p>I'  full stack developer base in the Philippines <br> I'm very passionate and dedicated to my work</p>
-        <button>Contact Info</button>
-        <button>Download CV</button>
-    </div>
-
-    <div>
-        <button>hello</button>
-        <i class="fa-brands fa-facebook"></i>
-
-    </div>
-    <i class="fa-brands fa-facebook"></i>
-    <i class="fa-brands fa-facebook-f"></i>
+    <button class="menu-btn" onclick="toggleMenu()">
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+    </button>
+    
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    
+    <script src="script.js"></script>
 </body>
 </html>
