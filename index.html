@@ -6,20 +6,32 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
-<body>
 
-    <button class="menu-btn" onclick="toggleMenu()">
-        <div class="menu-icon"></div>
-        <div class="menu-icon"></div>
-        <div class="menu-icon"></div>
-    </button>
-    
-    <ul class="nav-links" id="navLinks">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-    
-    <script src="script.js"></script>
+<body>
+    <!-- This is for the menu button-->
+    <div class="menu-container">
+        <button class="menu-btn" onclick="toggleMenu()">
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+        </button>
+        <div class="menu-options" id="menuOptions">
+            <img src="/media/rodian.jpg" alt="profile" class="profile-pic">
+          <button class="close-btn" onclick="toggleMenu()">X</button>
+          <a href="#" class="menu-option">Home</a>
+          <a href="#" class="menu-option">Contact</a>
+          <a href="#" class="menu-option">About</a>
+        </div>
+      </div>
+
+      <div class="descript">
+        <h1>Hello, I'm Rodian</h1>
+        <p>I'm a full junior full stack developer base in the Philippines</p>
+
+        <button class="d-btn">Contact</button>
+        <button class="d-btn">Download CV</button>
+      </div>
+
+        <script src="script.js"></script>
 </body>
 </html>

@@ -2,66 +2,90 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('media/bc.jpg'); /* Specify your background image path */
+    background-image: url('media/bcc.jpg'); /* Specify your background image path */
     background-size: cover;
     background-attachment: fixed; /* This ensures the background remains fixed while scrolling */
 }
 
-.menu-btn {
-    display: inline-block;
-    cursor: pointer;
+.menu-container {
+    position: relative;
+  }
+  
+  .menu-btn {
+    margin: 1%;
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
     border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
+    cursor: pointer;
+    border-radius: 10%;
+  }
+  
+  .menu-options {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px; /* Adjust width as needed */
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    padding-top: 50px; /* Adjust padding as needed */
+  }
+  
+  .menu-option {
+    padding: 12px 16px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .menu-option:hover {
+    background-color: #ddd;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 
-.menu-btn:hover {
-    background-color: #555;
-}
+  .close-btn:hover {
+    background-color: #ddd;
+  }
 
-.menu-icon {
+  .menu-icon {
     width: 20px;
     height: 2px;
-    background-color: #fff;
+    background-color: #000000;
     margin: 4px 0;
+    border-radius: 10px;
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.menu-btn.active .menu-icon:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 5px);
+.descript {
+    position: absolute;
+    top: 20%;
+    right: 5%;
 }
 
-.menu-btn.active .menu-icon:nth-child(2) {
-    opacity: 0;
+.profile-pic {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border-radius: 50%; /* Make the picture round */
+    margin-right: 10px; /* Adjust spacing between profile picture and menu icon */
+    object-fit: cover; /* Ensure the image maintains its aspect ratio */
+    object-position: center; /* Center the image within its container */
 }
 
-.menu-btn.active .menu-icon:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -5px);
+.d-btn{
+    cursor: pointer;
+    size: 10px;
+    border: none;
+    background: none;
 }
-
-.nav-links {
-    display: none; /* Hide navigation links by default */
-    list-style: none;
-    padding: 0;
-}
-
-.nav-links li {
-    margin-bottom: 10px;
-}
-
-.nav-links a {
-    display: block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.nav-links a:hover {
-    background-color: #555;
+.d-btn:hover{
+    background-color: #928f8f;
 }
