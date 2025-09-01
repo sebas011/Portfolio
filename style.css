@@ -1,0 +1,112 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: #222831;
+    color: #DFD0B8;
+}
+
+hr{
+    border: none;
+    border-top: 2px solid #DFD0B8; /* matches your text color */
+    margin: 10px 0; /* spacing around the line */
+}
+
+#status{
+    font: 1em sans-serif;
+    width: 75%;
+    background-color: rgb(109, 241, 80);
+    color: rgb(12, 12, 12);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Navbar container (inside main container) */
+#navbar-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0; /* remove margin */
+}
+
+/* Navbar list itself */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #515760;
+    border-radius: 0 10px 0 10px; /* optional: rounded only on left side */
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #DFD0B8;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background: #69707a;
+    color: #DFD0B8;
+}
+
+.container {
+    display: flex;
+    min-height: calc(100vh - 60px); /* full height minus footer */
+    padding: 20px; /* spacing inside the container */
+    gap: 20px; /* spacing between hero and main container */
+}
+
+/* Left column: Hero */
+#hero-container {
+    flex: 0 0 25%; /* fixed at 25% */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #393E46;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main-container {
+    flex: 1;
+    border-radius: 10px;
+    padding: 20px; /* keep padding for content */
+    background-color: #393E46;
+
+    display: flex;
+    flex-direction: column;
+    position: relative; /* so we can absolutely position navbar inside */
+}
+
+.prof-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.prof-img img {
+  width: 75%;          /* responsive: 25% of parent width */
+  aspect-ratio: 1 / 1; /* keeps it square automatically */
+  object-fit: cover;   /* fills circle without distortion */
+  object-position: top center; /* adjust focus (e.g., keep head visible) */
+  border-radius: 50%;  /* makes it a circle */
+}
+
+#hero-container h3, 
+#hero-container p{
+    margin-top: 0;
+    padding: 0;
+}
+
+h3{
+    font-size: 20px;
+}
